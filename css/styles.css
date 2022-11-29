@@ -1,0 +1,46 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem;
+}
+
+
+/*** HEADER ***/
+.header {
+	border-bottom: 1px solid #d4d8d8;
+	margin-bottom: 2rem;
+}
+
+.wrapper {
+	padding: 1.6rem;
+}
+
+.wrapper__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo__title {
+	font-size: 2.4rem;
+}
+
+.menu-navegacion {
+	display: none;
+}
+
+.menu-navegacion__list {
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+}
