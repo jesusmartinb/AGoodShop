@@ -12,6 +12,7 @@ body {
 	background-color: #fff;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.6rem;
+	min-height: 100vh;
 }
 
 
@@ -23,6 +24,8 @@ body {
 
 .wrapper {
 	padding: 1.6rem;
+	max-width: 117rem;
+	margin: 0 auto;
 }
 
 .wrapper__header {
@@ -45,8 +48,19 @@ body {
 	justify-content: space-evenly;
 }
 
-/*** MAIN SECCION OFERTA ***/
+.list-item__link {
+	text-decoration: none;
+	padding: 1rem 2rem;
+	color: #000;
+}
 
+.active {
+	border: 1px solid #d4d8d8;
+	border-radius: 6px;
+	font-weight: bold;
+}
+
+/*** MAIN SECCION OFERTA ***/
 .oferta {
 	display: flex;
 	flex-direction: column;
@@ -58,7 +72,7 @@ body {
 	margin-bottom: 2rem;
 }
 
-.image__etiqueta {
+.image__pill {
 	position: absolute;
 	top: 2rem;
 	left: 2rem;
@@ -69,7 +83,7 @@ body {
 }
 
 .image__img {
-	max-width: 100%;
+	width: 100%;
 }
 
 .oferta__oferta {
@@ -84,7 +98,8 @@ body {
 	margin-bottom: 1.6rem;
 }
 
-.oferta__description {
+.oferta__description,
+.sorteo__content {
 	margin-bottom: 1.4rem;
 }
 
@@ -102,7 +117,7 @@ body {
 
 .btn {
 	border: none;
-	border-radius: 10px;
+	border-radius: 6px;
 	color: #fff;
 }
 
@@ -120,7 +135,7 @@ body {
 .oferta__icon {
 	flex-basis: 45%;
 	display: flex;
-	gap: 2rem;
+	gap: 1rem;
 }
 
 .fa-solid {
@@ -158,4 +173,125 @@ body {
 .btn--nuevo {
 	background-color: #3b82f6;
 	padding: .8rem 1rem;
+}
+
+/*** SECCIÓN SORTEO ***/
+.sorteo {
+	padding: 3.5rem 2.5rem;
+	background-color: #eff6ff;
+	font-size: 1.8rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.sorteo__title {
+	font-size: 4.2rem;
+	line-height: 1.1;
+}
+
+.sorteo__form {
+	margin-top: 3rem;
+}
+
+.form__control {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+}
+
+.form__label {
+	padding: .6rem 0;
+}
+
+.form__input {
+	padding: 1rem;
+	color: #adadb5;
+	border: 1px solid #d4d8d8;
+	border-radius: 6px;
+}
+
+.btn--enviar {
+	background-color: #3b82f6;
+	padding: 1rem 1.2rem;
+}
+
+.form__control:last-child {
+	display: inline-block;
+	margin-top: 2rem;
+}
+
+/*** FOOTER ***/
+.footer {
+	text-align: center;
+	margin-top: 2rem;
+	border-top: 1px solid #d4d8d8;
+}
+
+.footer__copy {
+	padding: 2rem 0;
+	font-weight: bold;
+}
+
+/*** MEDIA QUERIES ***/
+@media screen and (min-width: 768px) {
+	.menu-navegacion {
+		display: block;
+	}
+
+	.oferta {
+		flex-direction: row;
+		gap: 3rem;
+	}
+
+	.oferta__image {
+		flex-basis: 40%;
+	}
+
+	.oferta__contenido {
+		flex-basis: 59%;
+	}
+
+	.oferta__icon {
+		flex-basis: 30%;
+		flex-grow: 1;
+	}
+
+	.cards {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.card-accesorio {
+		flex-basis: 47.5%;
+	}
+
+	.sorteo {
+		flex-direction: row;
+		gap: 3rem;
+	}
+
+	.sorteo__form {
+		margin-top: 0;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+
+	.card-accesorio {
+		flex-basis: 22%;
+	}
+
+	.sorteo {
+		padding: 5rem 4rem;
+		gap: 7.4rem;
+	}
+
+	.sorteo__participa {
+		flex-basis: 66%;
+	}
+
+	.sorteo__form {
+		flex-basis: 30%;
+	}
 }

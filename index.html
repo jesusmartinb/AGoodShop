@@ -22,10 +22,10 @@
 			</div>
 			<nav class="menu-navegacion">
 				<ul class="menu-navegacion__list">
-					<li class="menu-navegacion__list-item"><a href="#">Tienda</a></li>
-					<li class="menu-navegacion__list-item"><a href="#">Accesorios</a></li>
-					<li class="menu-navegacion__list-item"><a href="#">Soporte</a></li>
-					<li class="menu-navegacion__list-item"><a href="#">Contactar</a></li>
+					<li class="menu-navegacion__list-item"><a class="list-item__link" href="#">Tienda</a></li>
+					<li class="menu-navegacion__list-item"><a class="list-item__link" href="#">Accesorios</a></li>
+					<li class="menu-navegacion__list-item"><a class="list-item__link" href="#">Soporte</a></li>
+					<li class="menu-navegacion__list-item"><a class="list-item__link active" href="#">Contactar</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -35,7 +35,7 @@
 			<section class="oferta">
 				<div class="oferta__image image">
 					<img class="image__img" src="https://via.placeholder.com/470" alt="iFhone 13 Pro">
-					<div class="image__etiqueta">
+					<div class="image__pill">
 						128gb
 					</div>
 				</div> <!-- Fin .oferta__image image -->
@@ -72,42 +72,50 @@
 				<h2 class="accesorios__title title">Accesorios recomendados</h2>
 				<ul class="cards">
 					<li class="card-accesorio">
-						<div class="card-accesorio__header">
-							<img class="card-accesorio__img image__img" src="https://via.placeholder.com/350x169" alt="Cargador para el iFhone 13 Pro">
-						</div>
-						<div class="card-accesorio__body">
-							<h3 class="card-accesorio__title">Cargador</h3>
-							<p class="card-accesorio__description">El adaptador de corriente USB-C de 20W es muy rápido y eficiente, así que va de perlas para cargar tus dispositivos en cualquier lugar.</p>
-						</div>
+						<article>
+							<header class="card-accesorio__header">
+								<img class="card-accesorio__img image__img" src="https://via.placeholder.com/350x169" alt="Cargador para el iFhone 13 Pro">
+								<h3 class="card-accesorio__title">Cargador</h3>
+							</header>
+							<div class="card-accesorio__body">
+								<p class="card-accesorio__description">El adaptador de corriente USB-C de 20W es muy rápido y eficiente, así que va de perlas para cargar tus dispositivos en cualquier lugar.</p>
+							</div>
+						</article>
 					</li>
 					<li class="card-accesorio">
-						<div class="card-accesorio__header">
-							<img class="card-accesorio__img image__img" src="https://via.placeholder.com/350x169" alt="Base de carga inalámbrica para el iFhone 13 Pro">
-						</div>
-						<div class="card-accesorio__body">
-							<h3 class="card-accesorio__title">Base de carga inalámbrica</h3>
-							<button class="card-accesorio__btn btn btn--oferta">Oferta</button>
-							<p class="card-accesorio__description">Sistema de soporte para que sigas usando tu smartphone cómodamente mientras lo cargas. Compatible con carga rápida de 20W.</p>
-						</div>
+						<article>
+							<header class="card-accesorio__header">
+								<img class="card-accesorio__img image__img" src="https://via.placeholder.com/350x169" alt="Base de carga inalámbrica para el iFhone 13 Pro">
+								<h3 class="card-accesorio__title">Base de carga inalámbrica</h3>
+							</header>
+							<div class="card-accesorio__body">
+								<span class="card-accesorio__pill btn btn--oferta">Oferta</span>
+								<p class="card-accesorio__description">Sistema de soporte para que sigas usando tu smartphone cómodamente mientras lo cargas. Compatible con carga rápida de 20W.</p>
+							</div>
+						</article>
 					</li>
 					<li class="card-accesorio">
-						<div class="card-accesorio__header">
-							<img class="card-accesorio__img image__img" src="https://via.placeholder.com/350x169" alt="Funda piel para el iFhone 13 Pro">
-						</div>
-						<div class="card-accesorio__body">
-							<h3 class="card-accesorio__title">Funda piel</h3>
-							<p class="card-accesorio__description">Fabricadas en piel europea curtida y teñida con un proceso especial, son suaves al tacto y adquieren un tono natural con el tiempo. Los botones de aluminio combinan a la perfección con el acabado de la piel.</p>
-						</div>
+						<article>
+							<header class="card-accesorio__header">
+								<img class="card-accesorio__img image__img" src="https://via.placeholder.com/350x169" alt="Funda piel para el iFhone 13 Pro">
+								<h3 class="card-accesorio__title">Funda piel</h3>
+							</header>
+							<div class="card-accesorio__body">
+								<p class="card-accesorio__description">Fabricadas en piel europea curtida y teñida con un proceso especial, son suaves al tacto y adquieren un tono natural con el tiempo. Los botones de aluminio combinan a la perfección con el acabado de la piel.</p>
+							</div>
+						</article>
 					</li>
 					<li class="card-accesorio">
-						<div class="card-accesorio__header">
-							<img class="card-accesorio__img image__img" src="https://via.placeholder.com/350x169" alt="Cargador para el iFhone 13 Pro">
-						</div>
-						<div class="card-accesorio__body">
-							<h3 class="card-accesorio__title">Cargador</h3>
-							<button class="card-accesorio__btn btn btn--nuevo">Nuevo</button>
-							<p class="card-accesorio__description">El adaptador de corriente USB-C de 20W es muy rápido y eficiente, así que va de perlas para cargar tus dispositivos en cualquier lugar.</p>
-						</div>
+						<article>
+							<header class="card-accesorio__header">
+								<img class="card-accesorio__img image__img" src="https://via.placeholder.com/350x169" alt="Cargador para el iFhone 13 Pro">
+								<h3 class="card-accesorio__title">Cargador</h3>
+							</header>
+							<div class="card-accesorio__body">
+								<span class="card-accesorio__pill btn btn--nuevo">Nuevo</span>
+								<p class="card-accesorio__description">El adaptador de corriente USB-C de 20W es muy rápido y eficiente, así que va de perlas para cargar tus dispositivos en cualquier lugar.</p>
+							</div>
+						</article>
 					</li>
 				</ul> <!-- Fin .cards -->
 			</section>
@@ -120,11 +128,11 @@
 				<div class="sorteo__form">
 					<form class="form" action="" method="post">
 						<div class="form__control">
-							<label for="firstname">Nombre</label>
+							<label class="form__label" for="firstname">Nombre</label>
 							<input class="form__input" type="text" name="firstname" id="firstname" placeholder="Ari Gold" required>
 						</div>
 						<div class="form__control">
-							<label for="email">Email</label>
+							<label class="form__label" for="email">Email</label>
 							<input class="form__input" type="email" name="email" id="email" placeholder="arigold@mga.com" required>
 						</div>
 						<div class="form__control">
@@ -135,8 +143,8 @@
 			</section> <!-- Fin .sorteo -->
 		</div>
 	</main>
-	<footer>
-		<p>&copy; agoodshop</p>
+	<footer class="footer">
+		<p class="footer__copy">&copy; agoodshop</p>
 	</footer>
 </body>
 
